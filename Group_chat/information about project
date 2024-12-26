@@ -1,0 +1,62 @@
+Adama Scince And Technology University
+
+Name : Gadisa Gutema
+ID: UGR/30576/15
+Section: 01
+Instructor:Mengistu 
+course:Advanced Java
+
+Project Description:
+This is a Multi-Client Chat Application with a GUI, resembling popular messaging apps. Here's how it works:
+
+Start the Server:
+
+Run the ServerWithGUI program.
+The server listens for incoming client connections on a specified port (e.g., 7800).
+When a client connects, it is displayed in the server GUI.
+Connect Clients:
+
+Run the ClientWithGUI program.
+Enter a username to identify the client.
+The client connects to the server and is added to the active client list.
+Message Communication:
+
+Clients can send messages, which are:
+Displayed right-aligned in the sender's chat area.
+Broadcast to all connected clients, appearing left-aligned in their chat areas.
+Real-Time Updates:
+
+When a new client joins, it is notified to all other clients.
+If a client disconnects, others are informed.
+This project demonstrates a basic chat system using Java sockets and GUI for user-friendly interaction.
+
+
+This project utilizes several core Java concepts, including:
+
+Networking:
+
+Sockets: Used for client-server communication.
+ServerSocket: To listen for and accept incoming client connections.
+Multithreading:
+
+Each client connection is handled on a separate thread to allow multiple clients to communicate simultaneously without blocking.
+Input/Output Streams:
+
+BufferedReader and BufferedWriter: For reading and sending messages between the server and clients.
+GUI Development:
+
+Swing: Used for building the graphical user interface of the server and client applications.
+Components like JFrame, JTextArea, JTextField, and JButton are used for user interaction.
+Collections Framework:
+
+ArrayList: To manage active client connections on the server.
+String Manipulation:
+
+To format and display messages appropriately in the GUI.
+Event Handling:
+
+ActionListeners: For detecting button clicks and sending messages in the GUI.
+Exception Handling:
+
+Used extensively to handle networking and I/O errors gracefully.
+By combining these concepts, the project demonstrates how to build a real-time, multi-client chat system in Java.
